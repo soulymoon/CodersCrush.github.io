@@ -1,183 +1,106 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./data/windows-xp-wallpaper-bliss.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Title bar styling */
 .title-bar {
-    position: sticky;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 600px;
-    height: 50px;
-    padding: 16px 0;
-    z-index: 10;
-    font-size: 1rem;
-    border: 2px solid;
-    border-color: rgb(223, 223, 223) rgb(10, 10, 10) rgb(10, 10, 10) rgb(223, 223, 223);
-    box-shadow: rgb(254, 254, 254) 1px 1px 0 1px inset, rgb(132, 133, 132) -1px -1px 0 1px inset;
-    box-sizing: border-box;
-    display: inline-block;
-    background: rgb(198, 198, 198);
-    color: rgb(10, 10, 10);
-}
-
-.title-text {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 600px;
-}
-
-h1 {
-    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Headline styling */
 .headline {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.25rem;
-    font-style: italic;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Blue bar styling */
 .blue-bar {
-    position: sticky;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50px;
+    height: 5px;
     width: 80%;
-    max-width: 600px;
-    height: 20px;
-    padding: 16px 0;
-    z-index: 10;
-    font-size: 1rem;
-    border: 2px solid;
-    border-color: rgb(5, 0, 26) rgb(10, 10, 10) rgb(10, 10, 10) rgb(223, 223, 223);
-    box-shadow: rgb(150, 154, 223) 1px 1px 0 1px inset, rgb(132, 133, 132) -1px -1px 0 1px inset;
-    box-sizing: border-box;
-    display: inline-block;
-    background: rgb(21, 0, 255);
-    color: rgb(10, 10, 10);
-}
-
-.main-window {
-    position: sticky;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 40px;
-    width: 80%;
-    max-width: 800px;
-    height: auto;
-    padding: 16px 0;
-    z-index: 10;
-    font-size: 1rem;
-    border: 2px solid;
-    border-color: rgb(223, 223, 223) rgb(10, 10, 10) rgb(10, 10, 10) rgb(223, 223, 223);
-    box-shadow: rgb(254, 254, 254) 1px 1px 0 1px inset, rgb(132, 133, 132) -1px -1px 0 1px inset;
-    box-sizing: border-box;
-    display: inline-block;
-    background: rgb(198, 198, 198);
-    color: rgb(10, 10, 10);
-}
-
-h3 {
-    font-size: 2rem;
+    background-color: #007bff;
     margin-bottom: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* Main window styling */
+.main-window {
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    text-align: center;
-    background-color: aliceblue;
-    border: 2px solid;
-    border-color: rgb(223, 223, 223) rgb(10, 10, 10) rgb(10, 10, 10) rgb(223, 223, 223);
-    box-shadow: rgb(254, 254, 254) 1px 1px 0 1px inset, rgb(132, 133, 132) -1px -1px 0 1px inset;
-    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.message-Layout {
-    position: sticky;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50px;
-    width: auto;
-    padding: 16px 0;
-    z-index: 10;
-    font-size: 1rem;
+/* Button styling */
+.button {
+    margin: 0 auto;
 }
 
-#messageDisplay {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30%;
-    width: 80%;
-    max-width: 600px;
-    padding: 16px 0;
-    z-index: 10;
-    font-size: 1.25rem;
-    font-family: Arial, Helvetica, sans-serif;
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.button button {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 60%;
-    width: 80%;
-    max-width: 600px;
-    padding: 16px 0;
-    z-index: 10;
-    font-size: 1rem;
+button:hover {
+    background-color: #0056b3;
 }
 
-/* Media queries for additional responsiveness */
-@media (max-width: 768px) {
-    .title-bar,
-    .title-text,
-    .blue-bar,
-    .main-window,
-    #messageDisplay,
-    .button button {
-        width: 90%;
-        padding: 12px 0;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
+/* Message layout styling */
+.message-layout {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 480px) {
-    .title-bar,
-    .title-text,
-    .blue-bar,
-    .main-window,
-    #messageDisplay,
-    .button button {
-        width: 95%;
-        padding: 10px 0;
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
     }
 
-    h1 {
-        font-size: 1.25rem;
+    .title-bar, .headline, .main-window, .message-layout {
+        width: 100%;
+        padding: 15px;
     }
 
-    h3 {
-        font-size: 1.25rem;
+    .blue-bar {
+        width: 100%;
     }
 
-    #messageDisplay {
-        font-size: 1rem;
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
     }
 }
