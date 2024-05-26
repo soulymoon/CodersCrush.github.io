@@ -57,11 +57,14 @@ h3 {
 
 /* Headline styling */
 .headline {
-    background: rgba(255, 255, 255, 0.8);
+    background:rgb(198, 198, 198);
+    color: rgb(10, 10, 10);
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow:rgb(254 254 254) 1px 1px 0px 1px inset, rgb(132 133 132) -1px -1px 0px 1px inset;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 /* Blue bar styling */
