@@ -71,7 +71,7 @@ h3 {
 
 /* Main window styling */
 .main-window {
-    background:rgb(198, 198, 198);
+    background:transparent;
     color: rgb(10, 10, 10);
     padding: 20px;
     border-radius: 10px;
