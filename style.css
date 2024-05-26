@@ -107,6 +107,8 @@ button:hover {
 .message-layout {
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
+    top:50px;
+    width:auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -114,6 +116,9 @@ button:hover {
     font: 1rem;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    width:40%;
+    padding:16px 0px;
+    z-index:10;
 }
 
 
