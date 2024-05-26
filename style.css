@@ -27,7 +27,7 @@ h2{
     font-style: italic;
 }
 h3 {
-    font-size: 40px;
+    font-size: 20px;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -92,7 +92,7 @@ button {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #007bff;
+    background-color: transparent;
     border: none;
     border-radius: 5px;
     cursor: pointer;
